@@ -27,54 +27,7 @@
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="event.css">
   <link href="assets/css/style.css" rel="stylesheet">
-  
-  <style>
-    .events_img{
-        width:300px;
-        height:auto;
-    }
-    .event_card{
-        display:flex;
-        flex-direction:row;
-        justify-content:space-around;
-        margin-block:2rem;
-        align-items:center;
-        width:90%;
-        margin-inline:auto;
-        border-radius:5px;
-        /*border:1px solid #f82249;*/
-        padding:2rem;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-    }
-    .event_card > img {
-        flex: 1 1 30%;
-    }
-    .events_content{
-        flex: 1 1 70%;
-        padding:2rem;
-        margin-left:20px;
-    }
-    /*@media screen and (max-width:1024px){*/
-    /*    .events_img{*/
-    /*        width:350px;*/
-    /*        height:250px;*/
-    /*    }*/
-    /*}*/
-    @media screen and (max-width: 1200px) {
-        .event_card{
-            flex-direction:column;
-            
-        }
-        .events_img{
-        width:350px;
-        height:250px;
-        }
-        .events_content{
-            padding:0.5rem;
-        }
-    }
-    </style>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHYM5S81FF"></script>
@@ -116,252 +69,353 @@
   </header><!-- End Header -->
   <section id="hero">
     <div id="container">
-      <div id="event-bg">
-          <a href="#event1"><img src="assets/events/locationSVG.svg" class="location tag" id="location-one"/></a>
-          <a href="#event2"><img src="assets/events/locationSVG.svg" class="location tag" id="location-two"/></a>
-          <a href="#event3"><img src="assets/events/locationSVG.svg" class="location tag" id="location-three"/></a>
-          <a href="#event4"><img src="assets/events/locationSVG.svg" class="location tag" id="location-four"/></a>
-          <a href="#event5"><img src="assets/events/locationSVG.svg" class="location tag" id="location-five"/></a>
-          <a href="#event6"><img src="assets/events/locationSVG.svg" class="location tag" id="location-six"/></a>
-          <a href="#event7"><img src="assets/events/locationSVG.svg" class="location tag" id="location-seven"/></a>
-          <a href="#event8"><img src="assets/events/locationSVG.svg" class="location tag" id="location-eight"/></a>
-          <a href="#event9"><img src="assets/events/locationSVG.svg" class="location tag" id="location-nine"/></a>
-          <a href="#event10"><img src="assets/events/locationSVG.svg" class="location tag" id="location-ten"/></a>
-          <a href="#event11"><img src="assets/events/locationSVG.svg" class="location tag" id="location-eleven"/></a>
-          <a href="#event12"><img src="assets/events/locationSVG.svg" class="location tag" id="location-twelve"/></a>
-          <div id="timeline">
-              <div class="dot" id="one"><span></span><p class="timeline-data">January</p></div>
-              <div class="dot" id="two"><span></span><p class="timeline-data">February</p></div>
-              <div class="dot" id="three"><span></span><p class="timeline-data">March</p></div>
-              <div class="dot" id="four"><span></span><p class="timeline-data">April</p></div>
-              <div class="dot" id="five"><span></span><p class="timeline-data">May</p></div>
-              <div class="dot" id="six"><span></span><p class="timeline-data">June</p></div>
-              <div class="dot" id="seven"><span></span><p class="timeline-data">July</p></div>
-              <div class="dot" id="eight"><span></span><p class="timeline-data">August</p></div>
-              <div class="dot" id="nine"><span></span><p class="timeline-data">September</p></div>
-              <div class="dot" id="ten"><span></span><p class="timeline-data">October</p></div>
-              <div class="dot" id="eleven"><span></span><p class="timeline-data">November</p></div>
-              <div class="dot" id="twelve"><span></span><p class="timeline-data">December</p></div>
-              
-              <div id="card-container">
-                  <div class="card" id="hoverCard-one">This is a card one!</div>
-                  <div class="card" id="hoverCard-two">This is a card two!</div>
-                  <div class="card" id="hoverCard-three">This is a card three!</div>
-                  <div class="card" id="hoverCard-four">This is a card four!</div>
-                  <div class="card" id="hoverCard-five">This is a card five!</div>
-                  <div class="card" id="hoverCard-six">This is a card six!</div>
-                  <div class="card" id="hoverCard-seven">This is a card seven!</div>
-                  <div class="card" id="hoverCard-eight">This is a card eight!</div>
-                  <div class="card" id="hoverCard-nine">This is a card nine!</div>
-                  <div class="card" id="hoverCard-ten">This is a card ten!</div>
-                  <div class="card" id="hoverCard-eleven">This is a card eleven!</div>
-                  <div class="card" id="hoverCard-twelve">This is a card twelve!</div>
-              </div>
-              <div class="inside"></div>
-          </div>
-      </div>
-  </div>
+        <div id="event-bg">
+            <a href="#event1"><img src="assets/locationSVG.svg" class="location tag" id="location-one"/></a>
+            <a href="#event2"><img src="assets/locationSVG.svg" class="location tag" id="location-two"/></a>
+            <a href="#event3"><img src="assets/locationSVG.svg" class="location tag" id="location-three"/></a>
+            <a href="#event4"><img src="assets/locationSVG.svg" class="location tag" id="location-four"/></a>
+            <a href="#event5"><img src="assets/locationSVG.svg" class="location tag" id="location-five"/></a>
+            <a href="#event6"><img src="assets/locationSVG.svg" class="location tag" id="location-six"/></a>
+            <a href="#event7"><img src="assets/locationSVG.svg" class="location tag" id="location-seven"/></a>
+            <a href="#event8"><img src="assets/locationSVG.svg" class="location tag" id="location-eight"/></a>
+            <a href="#event9"><img src="assets/locationSVG.svg" class="location tag" id="location-nine"/></a>
+            <a href="#event10"><img src="assets/locationSVG.svg" class="location tag" id="location-ten"/></a>
+            <a href="#event11"><img src="assets/locationSVG.svg" class="location tag" id="location-eleven"/></a>
+            <a href="#event12"><img src="assets/locationSVG.svg" class="location tag" id="location-twelve"/></a>
+            <div id="timeline">
+                <div class="dot" id="one"><span></span><p class="timeline-data">January</p></div>
+                <div class="dot" id="two"><span></span><p class="timeline-data">February</p></div>
+                <div class="dot" id="three"><span></span><p class="timeline-data">March</p></div>
+                <div class="dot" id="four"><span></span><p class="timeline-data">April</p></div>
+                <div class="dot" id="five"><span></span><p class="timeline-data">May</p></div>
+                <div class="dot" id="six"><span></span><p class="timeline-data">June</p></div>
+                <div class="dot" id="seven"><span></span><p class="timeline-data">July</p></div>
+                <div class="dot" id="eight"><span></span><p class="timeline-data">August</p></div>
+                <div class="dot" id="nine"><span></span><p class="timeline-data">September</p></div>
+                <div class="dot" id="ten"><span></span><p class="timeline-data">October</p></div>
+                <div class="dot" id="eleven"><span></span><p class="timeline-data">November</p></div>
+                <div class="dot" id="twelve"><span></span><p class="timeline-data">December</p></div>
+                
+                <div id="card-container">
+                    <div class="card" id="hoverCard-one">This is a card one!</div>
+                    <div class="card" id="hoverCard-two">This is a card two!</div>
+                    <div class="card" id="hoverCard-three">This is a card three!</div>
+                    <div class="card" id="hoverCard-four">This is a card four!</div>
+                    <div class="card" id="hoverCard-five">This is a card five!</div>
+                    <div class="card" id="hoverCard-six">This is a card six!</div>
+                    <div class="card" id="hoverCard-seven">This is a card seven!</div>
+                    <div class="card" id="hoverCard-eight">This is a card eight!</div>
+                    <div class="card" id="hoverCard-nine">This is a card nine!</div>
+                    <div class="card" id="hoverCard-ten">This is a card ten!</div>
+                    <div class="card" id="hoverCard-eleven">This is a card eleven!</div>
+                    <div class="card" id="hoverCard-twelve">This is a card twelve!</div>
+                </div>
+                <div class="inside"></div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <main id="main">
   <h1>Events</h1>
   <div id="event-list-container">
-      <div class="event-card event1" id="event1">
-          <h2 class="event-title">Event Title</h2>
-          <div class="image-container">
-              <img src="assets/events/event1/img1.jpeg" class="event-image event1" name="image-event=1" id="image-event=1"/>
-              <a class="prev-image event1" onclick="plusSlides(this, -1)">&#10094;</a>
-              <a class="next-image event1" onclick="plusSlides(this, 1)">&#10095;</a>
-          </div>
-          <div class="event-content">
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-               
-          </div>
-      </div>
-      <div class="event-card event2" id="event2">
-          <h2 class="event-title">Event Title</h2>
-          <div class="image-container">
-              <img src="assets/events/event2/img1.jpeg" class="event-image event2" name="image-event=1" id="image-event=1"/>
-              <a class="prev-image event2" onclick="plusSlides(this, -1)">&#10094;</a>
-              <a class="next-image event2" onclick="plusSlides(this, 1)">&#10095;</a>
-          </div>
-          <div class="event-content">
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-               
-          </div>
-      </div>
-      <div class="event-card event3" id="event3">
-          <h2 class="event-title">Event Title</h2>
-          <div class="image-container">
-              <img src="assets/events/event3/img1.jpeg" class="event-image event3" name="image-event=1" id="image-event=1"/>
-              <a class="prev-image event3" onclick="plusSlides(this, -1)">&#10094;</a>
-              <a class="next-image event3" onclick="plusSlides(this, 1)">&#10095;</a>
-          </div>
-          <div class="event-content">
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-               
-          </div>
-      </div>
-      <div class="event-card event4" id="event4">
-          <h2 class="event-title">Event Title</h2>
-          <div class="image-container">
-              <img src="assets/events/event4/img1.jpeg" class="event-image event4" name="image-event=1" id="image-event=1"/>
-              <a class="prev-image event4" onclick="plusSlides(this, -1)">&#10094;</a>
-              <a class="next-image event4" onclick="plusSlides(this, 1)">&#10095;</a>
-          </div>
-          <div class="event-content">
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-               
-          </div>
-      </div>
-      <div class="event-card event5" id="event5">
-          <h2 class="event-title">Event Title</h2>
-          <div class="image-container">
-              <img src="assets/events/event5/img1.jpeg" class="event-image event5" name="image-event=1" id="image-event=1"/>
-              <a class="prev-image event5" onclick="plusSlides(this, -1)">&#10094;</a>
-              <a class="next-image event5" onclick="plusSlides(this, 1)">&#10095;</a>
-          </div>
-          <div class="event-content">
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-               
-          </div>
-      </div>
-      <div class="event-card event6" id="event6">
-          <h2 class="event-title">Event Title</h2>
-          <div class="image-container">
-              <img src="assets/events/event6/img1.jpeg" class="event-image event6" name="image-event=1" id="image-event=1"/>
-              <a class="prev-image event6" onclick="plusSlides(this, -1)">&#10094;</a>
-              <a class="next-image event6" onclick="plusSlides(this, 1)">&#10095;</a>
-          </div>
-          <div class="event-content">
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-               
-          </div>
-      </div>
-      <div class="event-card event7" id="event7">
-          <h2 class="event-title">Event Title</h2>
-          <div class="image-container">
-              <img src="assets/events/event7/img1.jpeg" class="event-image event7" name="image-event=1" id="image-event=1"/>
-              <a class="prev-image event7" onclick="plusSlides(this, -1)">&#10094;</a>
-              <a class="next-image event7" onclick="plusSlides(this, 1)">&#10095;</a>
-          </div>
-          <div class="event-content">
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-               
-          </div>
-      </div>
-      <div class="event-card event8" id="event8">
-          <h2 class="event-title">Event Title</h2>
-          <div class="image-container">
-              <img src="assets/events/event8/img1.jpeg" class="event-image event8" name="image-event=1" id="image-event=1"/>
-              <a class="prev-image event8" onclick="plusSlides(this, -1)">&#10094;</a>
-              <a class="next-image event8" onclick="plusSlides(this, 1)">&#10095;</a>
-          </div>
-          <div class="event-content">
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-               
-          </div>
-      </div>
-      <div class="event-card event9" id="event9">
-          <h2 class="event-title">Event Title</h2>
-          <div class="image-container">
-              <img src="assets/events/event9/img1.jpeg" class="event-image event9" name="image-event=1" id="image-event=1"/>
-              <a class="prev-image event9" onclick="plusSlides(this, -1)">&#10094;</a>
-              <a class="next-image event9" onclick="plusSlides(this, 1)">&#10095;</a>
-          </div>
-          <div class="event-content">
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-               
-          </div>
-      </div>
-      <div class="event-card event10" id="event10">
-          <h2 class="event-title">Event Title</h2>
-          <div class="image-container">
-              <img src="assets/events/event10/img1.jpeg" class="event-image event10" name="image-event=1" id="image-event=1"/>
-              <a class="prev-image event10" onclick="plusSlides(this, -1)">&#10094;</a>
-              <a class="next-image event10" onclick="plusSlides(this, 1)">&#10095;</a>
-          </div>
-          <div class="event-content">
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-               
-          </div>
-      </div>
-      <div class="event-card event11" id="event11">
-          <h2 class="event-title">Event Title</h2>
-          <div class="image-container">
-              <img src="assets/events/event11/img1.jpeg" class="event-image event11" name="image-event=1" id="image-event=1"/>
-              <a class="prev-image event11" onclick="plusSlides(this, -1)">&#10094;</a>
-              <a class="next-image event11" onclick="plusSlides(this, 1)">&#10095;</a>
-          </div>
-          <div class="event-content">
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-               
-          </div>
-      </div>
-      <div class="event-card event12" id="event12">
-          <h2 class="event-title">Event Title</h2>
-          <div class="image-container">
-              <img src="assets/events/event12/img1.jpeg" class="event-image event12" name="image-event=1" id="image-event=1"/>
-              <a class="prev-image event12" onclick="plusSlides(this, -1)">&#10094;</a>
-              <a class="next-image event12" onclick="plusSlides(this, 1)">&#10095;</a>
-          </div>
-          <div class="event-content">
-              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-                              libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
-               
-          </div>
-      </div>
-  </div>
-  <div class="up-arrow">
-      <a href="#container"><img width="50px" height="50px" src="assets/events/upArrowSVG.svg" /></a>
-  </div>
+    <div class="event-list-timeline">
+        <div class="timeline-square square-one">
+            <div class="timeline-date">12</div>
+            <div class="timeline-month">OCT</div>
+        </div>
+        <div class="timeline-square square-two">
+            <div class="timeline-date">12</div>
+            <div class="timeline-month">OCT</div>
+        </div>
+        <div class="timeline-square square-three">
+            <div class="timeline-date">12</div>
+            <div class="timeline-month">OCT</div>
+        </div>
+        <div class="timeline-square square-four">
+            <div class="timeline-date">12</div>
+            <div class="timeline-month">OCT</div>
+        </div>
+        <div class="timeline-square square-five">
+            <div class="timeline-date">12</div>
+            <div class="timeline-month">OCT</div>
+        </div>
+        <div class="timeline-square square-six">
+            <div class="timeline-date">12</div>
+            <div class="timeline-month">OCT</div>
+        </div>
+        <div class="timeline-square square-seven">
+            <div class="timeline-date">12</div>
+            <div class="timeline-month">OCT</div>
+        </div>
+        <div class="timeline-square square-eight">
+            <div class="timeline-date">12</div>
+            <div class="timeline-month">OCT</div>
+        </div>
+        <div class="timeline-square square-nine">
+            <div class="timeline-date">12</div>
+            <div class="timeline-month">OCT</div>
+        </div>
+        <div class="timeline-square square-ten">
+            <div class="timeline-date">12</div>
+            <div class="timeline-month">OCT</div>
+        </div>
+        <div class="timeline-square square-eleven">
+            <div class="timeline-date">12</div>
+            <div class="timeline-month">OCT</div>
+        </div>
+        <div class="timeline-square square-twelve">
+            <div class="timeline-date">12</div>
+            <div class="timeline-month">OCT</div>
+        </div>
+
+    </div>
+    <div class="event-card-container">
+        <div class="event-card event1" id="event1">
+            <h2 class="event-title">Event Title</h2>
+            <div class="image-container">
+                <img src="assets/event1/img1.jpeg" class="event-image event1" name="image-event=1" id="image-event=1"/>
+                <a class="prev-image event1" onclick="plusSlides(this, -1)">&#10094;</a>
+                <a class="next-image event1" onclick="plusSlides(this, 1)">&#10095;</a>
+            </div>
+            <div class="event-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 
+            </div>
+        </div>
+        <div class="event-card event2" id="event2">
+            <h2 class="event-title">Event Title</h2>
+            <div class="image-container">
+                <img src="assets/event2/img1.jpeg" class="event-image event2" name="image-event=1" id="image-event=1"/>
+                <a class="prev-image event2" onclick="plusSlides(this, -1)">&#10094;</a>
+                <a class="next-image event2" onclick="plusSlides(this, 1)">&#10095;</a>
+            </div>
+            <div class="event-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 
+            </div>
+        </div>
+        <div class="event-card event3" id="event3">
+            <h2 class="event-title">Event Title</h2>
+            <div class="image-container">
+                <img src="assets/event3/img1.jpeg" class="event-image event3" name="image-event=1" id="image-event=1"/>
+                <a class="prev-image event3" onclick="plusSlides(this, -1)">&#10094;</a>
+                <a class="next-image event3" onclick="plusSlides(this, 1)">&#10095;</a>
+            </div>
+            <div class="event-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 
+            </div>
+        </div>
+        <div class="event-card event4" id="event4">
+            <h2 class="event-title">Event Title</h2>
+            <div class="image-container">
+                <img src="assets/event4/img1.jpeg" class="event-image event4" name="image-event=1" id="image-event=1"/>
+                <a class="prev-image event4" onclick="plusSlides(this, -1)">&#10094;</a>
+                <a class="next-image event4" onclick="plusSlides(this, 1)">&#10095;</a>
+            </div>
+            <div class="event-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 
+            </div>
+        </div>
+        <div class="event-card event5" id="event5">
+            <h2 class="event-title">Event Title</h2>
+            <div class="image-container">
+                <img src="assets/event5/img1.jpeg" class="event-image event5" name="image-event=1" id="image-event=1"/>
+                <a class="prev-image event5" onclick="plusSlides(this, -1)">&#10094;</a>
+                <a class="next-image event5" onclick="plusSlides(this, 1)">&#10095;</a>
+            </div>
+            <div class="event-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 
+            </div>
+        </div>
+        <div class="event-card event6" id="event6">
+            <h2 class="event-title">Event Title</h2>
+            <div class="image-container">
+                <img src="assets/event6/img1.jpeg" class="event-image event6" name="image-event=1" id="image-event=1"/>
+                <a class="prev-image event6" onclick="plusSlides(this, -1)">&#10094;</a>
+                <a class="next-image event6" onclick="plusSlides(this, 1)">&#10095;</a>
+            </div>
+            <div class="event-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 
+            </div>
+        </div>
+        <div class="event-card event7" id="event7">
+            <h2 class="event-title">Event Title</h2>
+            <div class="image-container">
+                <img src="assets/event7/img1.jpeg" class="event-image event7" name="image-event=1" id="image-event=1"/>
+                <a class="prev-image event7" onclick="plusSlides(this, -1)">&#10094;</a>
+                <a class="next-image event7" onclick="plusSlides(this, 1)">&#10095;</a>
+            </div>
+            <div class="event-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 
+            </div>
+        </div>
+        <div class="event-card event8" id="event8">
+            <h2 class="event-title">Event Title</h2>
+            <div class="image-container">
+                <img src="assets/event8/img1.jpeg" class="event-image event8" name="image-event=1" id="image-event=1"/>
+                <a class="prev-image event8" onclick="plusSlides(this, -1)">&#10094;</a>
+                <a class="next-image event8" onclick="plusSlides(this, 1)">&#10095;</a>
+            </div>
+            <div class="event-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 
+            </div>
+        </div>
+        <div class="event-card event9" id="event9">
+            <h2 class="event-title">Event Title</h2>
+            <div class="image-container">
+                <img src="assets/event9/img1.jpeg" class="event-image event9" name="image-event=1" id="image-event=1"/>
+                <a class="prev-image event9" onclick="plusSlides(this, -1)">&#10094;</a>
+                <a class="next-image event9" onclick="plusSlides(this, 1)">&#10095;</a>
+            </div>
+            <div class="event-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 
+            </div>
+        </div>
+        <div class="event-card event10" id="event10">
+            <h2 class="event-title">Event Title</h2>
+            <div class="image-container">
+                <img src="assets/event10/img1.jpeg" class="event-image event10" name="image-event=1" id="image-event=1"/>
+                <a class="prev-image event10" onclick="plusSlides(this, -1)">&#10094;</a>
+                <a class="next-image event10" onclick="plusSlides(this, 1)">&#10095;</a>
+            </div>
+            <div class="event-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 
+            </div>
+        </div>
+        <div class="event-card event11" id="event11">
+            <h2 class="event-title">Event Title</h2>
+            <div class="image-container">
+                <img src="assets/event11/img1.jpeg" class="event-image event11" name="image-event=1" id="image-event=1"/>
+                <a class="prev-image event11" onclick="plusSlides(this, -1)">&#10094;</a>
+                <a class="next-image event11" onclick="plusSlides(this, 1)">&#10095;</a>
+            </div>
+            <div class="event-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 
+            </div>
+        </div>
+        <div class="event-card event12" id="event12">
+            <h2 class="event-title">Event Title</h2>
+            <div class="image-container">
+                <img src="assets/event12/img1.jpeg" class="event-image event12" name="image-event=1" id="image-event=1"/>
+                <a class="prev-image event12" onclick="plusSlides(this, -1)">&#10094;</a>
+                <a class="next-image event12" onclick="plusSlides(this, 1)">&#10095;</a>
+            </div>
+            <div class="event-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum nemo, odit
+                 libero consequatur repudiandae vero fuga debitis at, excepturi enim aliquam unde tempore delectus, porro ad commodi animi dolorum?
+                 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="up-arrow">
+    <a href="#container"><img width="50px" height="50px" src="assets/upArrowSVG.svg" /></a>
+</div>
   <script src="event.js"></script>
   </main><!-- End #main -->
 
