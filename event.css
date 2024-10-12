@@ -9,12 +9,12 @@ body {
     font-family: Arial, sans-serif;
 }
 #hero {
-  height: 100vh; /* Make hero cover the entire viewport height */
+  height: 100vh;
   display: flex;
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  justify-content: center;
   background-color: black;
-  background: url('assets/events/map.jpg') no-repeat center center/cover; /* Add background image */
+  background: url('assets/events/map.jpg') no-repeat center center/cover;
 }
 
 #container {
@@ -43,7 +43,7 @@ body {
   top: 600px;
 }
   .dot {
-    box-shadow: 0 0 5px rgba(50, 255, 74, 0.936) inset;
+    box-shadow: 0 0 5px rgba(66, 0, 10, 0.936) inset;
     z-index: 99;
     transition : 0.3s ease-in-out;
     width: 40px;
@@ -187,7 +187,7 @@ body {
 .card {
     visibility: hidden;
     position: absolute;
-    background-color: white;
+    background-color: black;
     border: 1px solid #ccc;
     width: 80%;
     height: 85%;
@@ -298,13 +298,13 @@ h1 {
     width: calc(99.5% * 3.5);
     height: 10px;
     position: relative;
-    box-shadow: 0 0 5px rgba(50, 255, 74, 0.936) inset;
+    box-shadow: 0 0 5px rgba(4, 9, 25, 0.936) inset;
     z-index: 1;
     background-color: lighten(#45AADA, 20%);
     top: 500px;
   }
     .dot {
-      box-shadow: 0 0 5px rgba(50, 255, 74, 0.936) inset;
+      box-shadow: 0 0 5px rgba(66, 0, 10, 0.936) inset;
       z-index: 99;
       transition : 0.3s ease-in-out;
       width: 30px;
@@ -413,13 +413,13 @@ h1 {
     width: calc(99.5% * 3);
     height: 10px;
     position: relative;
-    box-shadow: 0 0 5px rgba(50, 255, 74, 0.936) inset;
+    box-shadow: 0 0 5px rgba(4, 9, 25, 0.936) inset;
     z-index: 1;
     background-color: lighten(#45AADA, 20%);
     top: 500px;
   }
     .dot {
-      box-shadow: 0 0 5px rgba(50, 255, 74, 0.936) inset;
+      box-shadow: 0 0 5px rgba(66, 0, 10, 0.936) inset;
       z-index: 99;
       transition : 0.3s ease-in-out;
       width: 30px;
@@ -529,13 +529,13 @@ h1 {
     width: calc(99.5% * 2.5);
     height: 10px;
     position: relative;
-    box-shadow: 0 0 5px rgba(50, 255, 74, 0.936) inset;
+    box-shadow: 0 0 5px rgba(4, 9, 25, 0.936) inset;
     z-index: 1;
     background-color: lighten(#45AADA, 20%);
     top: 500px;
   }
     .dot {
-      box-shadow: 0 0 5px rgba(50, 255, 74, 0.936) inset;
+      box-shadow: 0 0 5px rgba(66, 0, 10, 0.936) inset;
       z-index: 99;
       transition : 0.3s ease-in-out;
       width: 40px;
@@ -645,13 +645,13 @@ h1 {
     width: calc(99.5% * 2);
     height: 10px;
     position: relative;
-    box-shadow: 0 0 5px rgba(50, 255, 74, 0.936) inset;
+    box-shadow: 0 0 5px rgba(4, 9, 25, 0.936) inset;
     z-index: 1;
     background-color: lighten(#45AADA, 20%);
     top: 500px;
   }
     .dot {
-      box-shadow: 0 0 5px rgba(50, 255, 74, 0.936) inset;
+      box-shadow: 0 0 5px rgba(66, 0, 10, 0.936) inset;
       z-index: 99;
       transition : 0.3s ease-in-out;
       width: 30px;
