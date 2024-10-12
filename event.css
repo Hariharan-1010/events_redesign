@@ -399,6 +399,14 @@ h1 {
       text-align: justify;
       overflow: auto;
     }
+    #card-container {
+      display: none;
+      height: 300px;
+    }
+    .card {
+      display: none;
+        visibility: hidden;
+    }
 }
 @media only screen and (min-width: 350px) and (max-width: 450px) {
   #timeline {
@@ -515,6 +523,14 @@ h1 {
       text-align: justify;
       overflow: auto;
     }
+    #card-container {
+      display: none;
+      height: 300px;
+    }
+    .card {
+      display: none;
+        visibility: hidden;
+    }
 }
 @media only screen and (min-width: 450px) and (max-width: 600px) {
   #timeline {
@@ -630,6 +646,14 @@ h1 {
       font-size: 20px;
       text-align: justify;
       overflow: auto;
+    }
+    #card-container {
+      display: none;
+      height: 300px;
+    }
+    .card {
+      display: none;
+        visibility: hidden;
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 1480px) {
@@ -748,6 +772,14 @@ h1 {
       font-size: 20px;
       text-align: justify;
       margin-bottom: 50px;
+    }
+    #card-container {
+      display: none;
+      height: 300px;
+    }
+    .card {
+      display: none;
+        visibility: hidden;
     }
 }
 @media only screen and (min-width: 1800px) and (max-width: 2100px) {
