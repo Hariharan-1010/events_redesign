@@ -793,7 +793,7 @@ left: calc(92.5% * 2);
     }
     .event-content {
       grid-area: 2 / 7 / 3 / 13;
-      width: 300px;
+      width: auto;
       height: 220px;
       min-height: 100px;
       margin: auto auto;
