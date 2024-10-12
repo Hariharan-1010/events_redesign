@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ACM-CEG STUDENT CHAPTER</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/LOGO_white.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHYM5S81FF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JHYM5S81FF');
+</script>
+<style>
+    .events_img{
+        width:300px;
+        height:200px;
+    }
+    .event_card{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        margin-block:2rem;
+        align-items:center;
+        width:90%;
+        margin-inline:auto;
+        border-radius:5px;
+        /*border:1px solid #f82249;*/
+        padding:2rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    }
+    .event_card > img {
+        flex: 1 1 30%;
+    }
+    .events_content{
+        flex: 1 1 70%;
+        padding:2rem;
+        margin-left:20px;
+    }
+    
+    .img-fluid {
+      width: 100%;
+      height: auto;
+      display: block;
+      background-color: #f0f0f0; /* Light gray background for placeholder */
+      border: 1px solid #ccc; /* Light border for placeholder */
+    }
+    
+    .img-fluid::before {
+      content: "No Image Available";
+      display: block;
+      text-align: center;
+      padding: 20px; /* Adjust padding as needed */
+      font-size: 1.2em;
+      color: #666;
+    }
+    
+    .img-fluid:not([src])::before {
+      content: "No Image Available";
+    }
+    
+    .img-fluid:not([src]), .img-fluid[src=""] {
+      border: 1px solid #000000; /* Light black border */
+      background-color: transparent; /* Leave the inside empty */
+    }
+    
+    .img-fluid[src]::before {
+      display: none;
+    }
+
+
+    /*@media screen and (max-width:1024px){*/
+    /*    .events_img{*/
+    /*        width:350px;*/
+    /*        height:250px;*/
+    /*    }*/
+    /*}*/
+    @media screen and (max-width: 1024px) {
+        .event_card{
+            flex-direction:column;
+            
+        }
+        .events_img{
+        width:350px;
+        height:250px;
+        }
+        .events_content{
+            padding:0.5rem;
+        }
+    }
+    
+</style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <a href="index.html" class="scrollto"><img src="assets/img/LOGO_white.png" alt="" title=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="prodigy.html">Prodigy</a></li>
+          <li><a class="nav-link scrollto active" href="team.html">Team</a></li>
+          <li><a class="nav-link scrollto" href="events.html">Events</a></li>
+          <li><a class="nav-link scrollto" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="alumniPage.html">Alumni</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a class="contact-us scrollto" href="contact.html">Contact us</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <!-- ======= Speakers Section ======= -->
+    <section id="speakers">
+      <div class="team container" data-aos="zoom-in">
+        <!-- <div class="section-header">
+          <h2>TEAM</h2>
+          <p>Here are some of our team members</p>
+        </div> -->
+
+        <!-- <div class="section-header">
+          <h2>FACULTY</h2>
+         
+        </div> -->
+        <!-- <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/nono.jpg" alt="1" class="img-fluid">
+              <div class="details">
+                <h3><a href="">someone</a></h3>
+                <p>about them</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/nono.jpg" alt="1" class="img-fluid">
+              <div class="details">
+                <h3><a href="">someone</a></h3>
+                <p>about them</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> -->
+
+         <!--Events Section-->
+    <section style="margin-top:50px;">
+        <div class="container" data-aos="fade-up">
+        <div class="section-header" >
+          <h2 style="margin-bottom:0px;padding:0px;">Meet Our Founder</h2>
+        </div>
+        </div>
+        <div class = "events_container">
+            <div class = "event_card">
+                <img src="assets/img/team/Faculty/RP_Mam.jpg" class = "events_img" style="border-radius:6px">
+                <div class = "events_content">
+                    <h3>Dr.Ranjani Parthasarathi, Retired Professor</h3>
+                    Dr. Ranjani Parthsarathy is a highly accomplished professional with a diverse educational background, holding a Ph.D. in Electrical Engineering from IIT Madras, an MS in Electrical & Computer Engineering from Illinois Institute of Technology, and a BE (Hons.) in Electronics and Communication Engineering from College of Engineering, Guindy.
+<br>With over 27 years at Anna University Chennai and CEG, she excels as a Professor in Computer Science Information Systems. Her expertise includes Computer Architecture, Multicore Computing, Reconfigurable Computing, Networks, and Indian Knowledge Systems and Language Technology. She played a key role in initiating the ACM-CEG student chapter at CEG, guiding its success over nearly two decades. Her instrumental contribution has significantly contributed to the sustained success and growth of this student chapter, fostering a vibrant community of aspiring computer science 
+professionals.
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+        <div class="section-header">
+          <h2>Faculty Heads</h2>
+        </div>
+        <div class="row d-flex justify-content-center">
+            
+            <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img  src="./assets/img/team/Faculty/Bama_Mam.jpg" alt="1" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Dr Bama Srinivasan</a></h3>
+                <p>Associate Professor</p>
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
+                                                                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                                                                        <a href=""><i class="bi bi-instagram"></i></a> -->
+                  <a href="https://sites.google.com/site/chorse" target="_blank"><i class="bi bi-globe"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img  src="./assets/img/team/Faculty/Annie_Mam.jpg" alt="1" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Dr R Arockia Xavier Annie</a></h3>
+                <p>Associate Professor</p>
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
+                                                                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                                                                        <a href=""><i class="bi bi-instagram"></i></a> -->
+                  <a href="https://www.auegov.ac.in/HomePage/?Auth=wbFxSUg=" target="_blank"><i class="bi bi-globe"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div class="section-header">
+          <h2>DIRECTORS</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/img/team/directors/Chair.jpg" alt="Ansh Bomb" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Ansh Bomb</a></h3>
+                <p>Chairperson</p>
+                <div class="social">
+                  <a href="http://www.linkedin.com/in/ansh-bomb" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/img/team/directors/Vice_Chairperson.png" alt="Shiyam Ganesh" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Shiyam Ganesh T</a></h3>
+                <p>Vice Chairperson</p>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/shiyam-ganesh-t/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/img/team/directors/Secretary.jpg" alt="Harish Kummar KGS" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Harish Kummar KGS</a></h3>
+                <p>Secretary</p>
+                <div class="social">
+                  <a href="http://linkedin.com/in/harish-kummar-k-g-s" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/img/team/directors/Treasurer1.jpg" alt="Shantha Priya" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Shantha Priya</a></h3>
+                <p>Treasurer</p>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/shantha-priya-manikandan-3b506821b" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/img/team/directors/Events1.jpg" alt="Dhivyadharshini" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Dhivyadharshini</a></h3>
+                <p>Director Of Events</p>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/dhivya-dharshini-8b792a237" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/img/team/directors/Events2.jpg" alt="Dinesh S" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Dinesh S</a></h3>
+                <p>Director Of Events</p>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/dineshsunraj/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/img/team/directors/empty.png" alt="Keerthi" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Keerthi</a></h3>
+                <p>Director Of Events</p>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/keerthi-varshini-6bb233232/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/img/team/directors/CpWing.jpeg" alt="Nivedha" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Nivedha</a></h3>
+                <p>Director Of CP wing</p>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/nivedha04" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/img/team/directors/design2.jpg" alt="Varsha M" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Varsha M</a></h3>
+                <p>Director Of Design and Content</p>
+                <div class="social">
+                  <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/img/team/directors/design1.jpeg" alt="Ramanan" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Ramanan</a></h3>
+                <p>Director Of Design and Content</p>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/ramanansj/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/img/team/directors/empty.png" alt="Puvis" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Puvis</a></h3>
+                <p>Director Of Design and Content</p>
+                <div class="social">
+                  <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/img/team/directors/webApp.jpg" alt="Hemanth P" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Hemanth P</a></h3>
+                <p>Director Of Web and App</p>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/hemanth3/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/img/team/directors/marketing1.jpg" alt="Harrin Viknesh S" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Harrin Viknesh S</a></h3>
+                <p>Director Of Marketing</p>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/harrin-viknesh-367a65227/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/img/team/directors/marketing2.jpg" alt="Valarmathi B" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Valarmathi B</a></h3>
+                <p>Director Of Marketing</p>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/valarmathi-b-1b2286227/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/img/team/directors/HumanResource.jpg" alt="Krishna Kumar GR" class="img-fluid">
+              <div class="details">
+                <h3><a href="">Krishna Kumar GR</a></h3>
+                <p>Director Of HR</p>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/krishna-kumar-75b844264/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--div class="section-header">
+          <h2>DEPUTY DIRECTORS</h2>
+        </div-->
+        <!--div class="row">
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/Web_Sudeep.jpg" alt="Sudeep" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Sudeep R</a></h3>
+          <p>Web and App</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sudeep72/" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/Web_Nikhil.jpg" alt="Nikhil" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Nikhil Prasanna A</a></h3>
+          <p>Web and App</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nikhil03a/" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/Design_Subasini.jpg" alt="Subasini" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Subasini J</a></h3>
+          <p>Design</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/subasini-jaganathan" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/Design_Swathi.jpg" alt="1" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Swathi K</a></h3>
+          <p>Design</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/swathi-k-6b648b263" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/Events_Dhivya_Dharshini.jpg" alt="1" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Dhivyadharshini S B</a></h3>
+          <p>Events</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/dhivya-dharshini-8b792a237" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/Events_Shantha_Priya.jpg" alt="1" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Shantha Priya M</a></h3>
+          <p>Events</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/shantha-priya-manikandan-3b506821b" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/Events_Shiyam_Ganesh.jpg" alt="1" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Shiyam Ganesh T</a></h3>
+          <p>Events</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/shiyam-ganesh-t-b7b0b7267/" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/Events_Ansh_Bomb.jpg" alt="1" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Ansh Bomb</a></h3>
+          <p>Events</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ansh-bomb/" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/HR_Harish.jpeg" alt="1" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Harish Kummar K G S</a></h3>
+          <p>HR</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/harish-kummar-k-g-s-996b50209" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/HR_Varsha.jpg" alt="1" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Varsha B</a></h3>
+          <p>HR</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/varshacse" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/Content_ Ananya.jpg" alt="1" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Ananya K A</a></h3>
+          <p>Content</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ananya-k-a-735742232/" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/Content_Ramanan.jpeg" alt="1" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Ramanan S J</a></h3>
+          <p>Content</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ramanansj/" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/Marketing_Dhusyanth.png" alt="1" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Dhusyanth Karthic S</a></h3>
+          <p>Marketing</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/dhusyanth-karthic-b63a8922b/" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/PR_Ajai_Krishna.jpeg" alt="1" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Ajai Krishna T S</a></h3>
+          <p>Public Relations</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ajai-krishna-t-s-4b3508243/" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/CP_Dharsan.jpg" alt="1" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Dharsan S</a></h3>
+          <p>CP Wing</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/dharsans2004" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img  src="assets/img/team/deputydirectors/CP_Nivedha.jpeg" alt="1" class="img-fluid">
+        <div class="details">
+          <h3><a href="">Nivedha B</a></h3>
+          <p>CP Wing</p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nivedha04" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div -->
+
+
+      </div>
+    </section><!-- End Speakers Section -->
+
+  </main><!-- End #main -->
+
+  <div id="footer-placeholder">
+
+  </div>
+
+  <!--   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    $(function () {
+      $("#footer-placeholder").load("footer_ver1.1.html");
+    });
+  </script>
+</body>
+
+</html>

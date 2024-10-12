@@ -9,13 +9,28 @@ body {
     background-color: black;
     font-family: Arial, sans-serif;
 }
+#hero {
+  height: 100vh; /* Make hero cover the entire viewport height */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  background-color: black;
+  background: url('assets/events/map.jpg') no-repeat center center/cover; /* Add background image */
+}
+
 #container {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 #event-bg {
   width: 100%;
@@ -24,14 +39,17 @@ body {
   position: relative;
 }
 
+
 #timeline {
   display: inline-block;
   width: calc(99.5% * 2);
   height: 10px;
   position: relative;
   box-shadow: 0 0 5px rgba(4, 9, 25, 0.936) inset;
+  box-shadow: 0 0 5px rgba(4, 9, 25, 0.936) inset;
   z-index: 1;
   background-color: lighten(#45AADA, 20%);
+  top: 600px;
   top: 600px;
 }
   .dot {
@@ -53,49 +71,61 @@ body {
  #one{
     left: 7.7%;
     background-color: #f82249;
+    background-color: #f82249;
   }
   #two{
     left: 15.4%;
+    background-color: #f82249;
     background-color: #f82249;
   }
   #three{
     left: 23.1%;
     background-color: #f82249;
+    background-color: #f82249;
   }
   #four{
     left: 30.8%;
+    background-color: #f82249;
     background-color: #f82249;
   }
   #five{
     left: 38.5%;
     background-color: #f82249;
+    background-color: #f82249;
   }
   #six{
     left: 46.2%;
+    background-color: #f82249;
     background-color: #f82249;
   }
   #seven{
     left: 53.9%;
     background-color: #f82249;
+    background-color: #f82249;
   }
   #eight{
     left: 61.6%;
+    background-color: #f82249;
     background-color: #f82249;
   }
   #nine{
     left: 69.4%;
     background-color: #f82249;
+    background-color: #f82249;
   }
   #ten{
     left: 77.1%;
+    background-color: #f82249;
     background-color: #f82249;
   }
   #eleven{
     left: 84.8%;
     background-color: #f82249;
+    background-color: #f82249;
   }
   #twelve{
     left: 92.5%;
+    background-color: #f82249;
     background-color: #f82249;
   }
   span {
@@ -137,6 +167,7 @@ body {
     height: 85%;
     border-radius: 10px;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     z-index: 2;
     opacity: 0;

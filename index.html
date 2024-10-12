@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ACM-CEG STUDENT CHAPTER</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/LOGO_white.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHYM5S81FF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JHYM5S81FF');
+</script>
+
+<style>
+    .events_img{
+        width:300px;
+        height:auto;
+    }
+    .event_card{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        margin-block:2rem;
+        align-items:center;
+        width:90%;
+        margin-inline:auto;
+        border-radius:5px;
+        /*border:1px solid #f82249;*/
+        padding:2rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    }
+    .event_card > img {
+        flex: 1 1 30%;
+    }
+    .events_content{
+        flex: 1 1 70%;
+        padding:2rem;
+        margin-left:20px;
+    }
+    /*@media screen and (max-width:1024px){*/
+    /*    .events_img{*/
+    /*        width:350px;*/
+    /*        height:250px;*/
+    /*    }*/
+    /*}*/
+    @media screen and (max-width: 1024px) {
+        .event_card{
+            flex-direction:column;
+            
+        }
+        .events_img{
+        width:350px;
+        height:250px;
+        }
+        .events_content{
+            padding:0.5rem;
+        }
+    }
+    .button-6 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+   .enlarge:hover {
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+.modal-content {
+      border-radius: 15px;
+      background: rgba(0, 0, 0, 0);
+      border: none !important;
+}
+   .modal-body {
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 0 !important;
+    }
+      .modal-header {
+    border: none !important;
+  }
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); 
+      z-index: 1050;
+      display: none;
+    }
+
+    .modal-open .modal-overlay {
+      display: block;
+    }
+    @media (max-width: 991.99px) {
+      .enlarge {
+        pointer-events: none; /* Disable click event for screens >= 1000px */
+      }
+    }
+
+  </style>
+
+<script>
+  var modal = new bootstrap.Modal(document.getElementById('imageModal'), {
+    keyboard: false
+  });
+
+  modal._config.backdrop = false;
+
+  document.getElementById('imageModal').addEventListener('show.bs.modal', function () {
+    document.body.classList.add('modal-open');
+  });
+
+  document.getElementById('imageModal').addEventListener('hidden.bs.modal', function () {
+    document.body.classList.remove('modal-open');
+  });
+</script>
+
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>ACM CEG</span></a></h1>-->
+        <a href="index.html" class="scrollto"><img src="assets/img/LOGO_white.png" alt="" title=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="prodigy.html">Prodigy</a></li>
+          <li><a class="nav-link scrollto" href="team.html">Team</a></li>
+          <li><a class="nav-link scrollto" href="events.html">Events</a></li>
+          <li><a class="nav-link scrollto" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="alumniPage.html">Alumni</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a class="contact-us scrollto" href="contact.html">Contact us</a>
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+  <section id="hero">
+    <div id="particles-js"></div>
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="mb-3 pb-0"><span>ACM</span> - <span>CEG</span><br>STUDENT CHAPTER</h1>
+      <p class="mb-3 pb-0">We <b>Association for Computing Machinery</b>, aim to motivate students to embark on a journey of learning and developing the tools of
+        computer science and instilling in them a passion for computer science.We serve to clear the clutter and provide
+        guidance to help them to achieve their goals</p>
+
+      <!-- <a href="./contact.html" class="about-btn scrollto">JOIN US</a> -->
+      <!--<a href="https://auceg.acm.org/codher/" class="p-about-btn" target="_blank">REGISTER FOR CODHER</a>-->
+      <!-- <a href="prodigy.html" class="p-about-btn">REGISTER FOR PRODIGY</a> -->
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+<section id="about">
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>About The Club</h2>
+        <p class="fs-5" style="text-align: justify; max-width: 800px; margin: 0 auto;">
+          The ACM-CEG Student Chapter, initiated in 2004, aims to instill an unwavering enthusiasm for computer science in students. The club provides a plethora of networking opportunities and helps to seek advice from the top experts in the field. The club has been steadily working to inculcate an unalloyed interest in Computer Science in students and consequently, stimulating the advancement of computer science as a whole.
+        </p>
+      </div>
+      <div class="col-lg-6 p-3" style="text-align: center;">
+        <div class="enlarge" id="enlargeImage" data-bs-toggle="modal" data-bs-target="#imageModal">
+          <img src="assets/img/about/about1.jpg" class="img-fluid rounded" style="width: 90%; height: auto;" alt="About Image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/img/about/about1.jpg" class="img-fluid rounded" style="width: 100%; height: auto;" alt="About Image">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Overlay -->
+<div class="modal-overlay"></div>
+<!-- End About Section -->
+    
+    <!--Events Section-->
+    <section style="margin-top:50px;">
+        <div class="container" data-aos="fade-up">
+        <div class="section-header" >
+          <h2 style="margin-bottom:0px;padding:0px;">Our Flagship Events</h2>
+        </div>
+        </div>
+        <div class = "events_container" data-aos="fade-up" style="justify-content:space-around;box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;padding:2rem;border-radius:5px;">
+            <div class = "event_card">
+                <img src="assets/img/events/prodigy.jpg" class = "img-fluid events_img">
+                <div class = "events_content" style="text-align: justify;max-width: 800px;margin: 0 auto;">
+                    Prodigy, an annual state-level technical event organized by the ACM-CEG chapter at Anna University, is a pioneering initiative designed exclusively for students in grades 9-12. Rooted in the ethos of promoting technological awareness and fostering a passion for computer science, Prodigy goes beyond traditional education, providing a dynamic platform for young minds to delve into the exciting realms of computing and technology.
+                    Over the span of more than 15 years, Prodigy has transcended its identity as a mere technical event; it has evolved into a transformative experience. By reaching out to schools and students across the state, Prodigy has become a beacon of inspiration, sparking a passion for technology that extends far beyond the duration of the event. The legacy of Prodigy is etched in the minds of those who have participated, fostering a community of young enthusiasts who are not just consumers but creators in the world of technology.
+                    <div style="margin-top:15px;">
+                            <button class="button-6" role="button">
+                    <a href="https://auceg.acm.org/prodigy/" style="color:#0a1026;">Explore Prodigy</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class = "event_card">
+                <img src="assets/img/events/codher.jpeg" class = "events_img">
+                <div class = "events_content" style="text-align: justify;max-width: 800px;margin: 0 auto;">
+                    Empowerment takes center stage at "CodHer," our exclusive women-only hackathon designed to inspire and motivate female developers to actively engage in the dynamic world of hackathons. Providing a dedicated platform for female talent, CodHer is a showcase of skills, innovation, and collaboration. With renowned sponsors like Motorq and GitHub, participants have the opportunity to compete for cash prizes exceeding 50k, along with the chance to secure coveted internships. Join CodHer and become a part of a supportive community, celebrating the prowess of women in the tech space and encouraging their active participation in the ever-evolving landscape of hackathons.
+                    <div style="margin-top:15px;">
+                            <button class="button-6" role="button">
+                    <a href="https://auceg.acm.org/codher/" style="color:#0a1026;">Explore CodHer</a></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center;">
+    <button class="button-6" role="button" style="margin: auto;">
+        <a href="events.html" class="nav-link scrollto" style="color: #0a1026;">Explore our Events</a>
+    </button>
+</div>
+
+                    
+        </div>
+    </section>
+
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Gallery</h2>
+          <p>Check our gallery from the recent events</p>
+        </div>
+      </div>
+
+      <div class="gallery-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide" data-tilt data-tilt-scale="1.1"><a href="assets/img/gallery/1.jpg"
+              class="gallery-lightbox"><img src="assets/img/gallery/1.jpg" class="img-fluid" alt="" loading="lazy"></a>
+          </div>
+          <div class="swiper-slide" data-tilt data-tilt-scale="1.1"><a href="assets/img/gallery/2.jpg"
+              class="gallery-lightbox"><img src="assets/img/gallery/2.jpg" class="img-fluid" alt="" loading="lazy"></a>
+          </div>
+          <div class="swiper-slide" data-tilt data-tilt-scale="1.1"><a href="assets/img/gallery/3.jpg"
+              class="gallery-lightbox"><img src="assets/img/gallery/3.jpg" class="img-fluid" alt="" loading="lazy"></a>
+          </div>
+          <div class="swiper-slide" data-tilt data-tilt-scale="1.1"><a href="assets/img/gallery/4.jpg"
+              class="gallery-lightbox"><img src="assets/img/gallery/4.jpg" class="img-fluid" alt="" loading="lazy"></a>
+          </div>
+          <div class="swiper-slide" data-tilt data-tilt-scale="1.1"><a href="assets/img/gallery/5.jpg"
+              class="gallery-lightbox"><img src="assets/img/gallery/5.jpg" class="img-fluid" alt="" loading="lazy"></a>
+          </div>
+          <div class="swiper-slide" data-tilt data-tilt-scale="1.1"><a href="assets/img/gallery/6.jpg"
+              class="gallery-lightbox"><img src="assets/img/gallery/6.jpg" class="img-fluid" alt="" loading="lazy"></a>
+          </div>
+          <div class="swiper-slide" data-tilt data-tilt-scale="1.1"><a href="assets/img/gallery/7.jpg"
+              class="gallery-lightbox"><img src="assets/img/gallery/7.jpg" class="img-fluid" alt="" loading="lazy"></a>
+          </div>
+          <div class="swiper-slide" data-tilt data-tilt-scale="1.1"><a href="assets/img/gallery/8.jpg"
+              class="gallery-lightbox"><img src="assets/img/gallery/8.jpg" class="img-fluid" alt="" loading="lazy"></a>
+          </div>
+          <div class="swiper-slide" data-tilt data-tilt-scale="1.1"><a href="assets/img/gallery/10.jpg"
+              class="gallery-lightbox"><img src="assets/img/gallery/10.jpg" class="img-fluid" alt="" loading="lazy"></a>
+          </div>
+          <div class="swiper-slide" data-tilt data-tilt-scale="1.1"><a href="assets/img/gallery/11.jpg"
+              class="gallery-lightbox"><img src="assets/img/gallery/11.jpg" class="img-fluid" alt="" loading="lazy"></a>
+          </div>
+          <div class="swiper-slide" data-tilt data-tilt-scale="1.1"><a href="assets/img/gallery/12.jpg"
+              class="gallery-lightbox"><img src="assets/img/gallery/12.jpg" class="img-fluid" alt="" loading="lazy"></a>
+          </div>
+          <div class="swiper-slide" data-tilt data-tilt-scale="1.1"><a href="assets/img/gallery/13.jpg"
+              class="gallery-lightbox"><img src="assets/img/gallery/13.jpg" class="img-fluid" alt="" loading="lazy"></a>
+          </div>
+          <div class="swiper-slide" data-tilt data-tilt-scale="1.1"><a href="assets/img/gallery/14.jpg"
+              class="gallery-lightbox"><img src="assets/img/gallery/14.jpg" class="img-fluid" alt="" loading="lazy"></a>
+          </div>
+          <div class="swiper-slide" data-tilt data-tilt-scale="1.1"><a href="assets/img/gallery/15.jpg"
+              class="gallery-lightbox"><img src="assets/img/gallery/15.jpg" class="img-fluid" alt="" loading="lazy"></a>
+          </div>
+          <div class="swiper-slide" data-tilt data-tilt-scale="1.1"><a href="assets/img/gallery/16.jpg"
+              class="gallery-lightbox"><img src="assets/img/gallery/16.jpg" class="img-fluid" alt="" loading="lazy"></a>
+          </div>
+        </div>
+        <div class="swiper-pagination" data-tilt data-tilt-scale="1.1"></div>
+      </div>
+
+    </section><!-- End Gallery Section -->
+    
+        <!-- ======= Event Section ======= -->
+    <!--<section id="mevent">-->
+
+    <!--</section>-->
+    <!-- End Event Section -->
+
+    <!-- =======  F.A.Q Section ======= -->
+    <section id="faq">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>F.A.Q </h2>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-9">
+
+            <ul class="faq-list">
+
+              <li>
+                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">What is ACM? <i
+                    class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    The ACM-CEG Student Chapter is a recognized student organization dedicated to fostering a genuine passion for Computer Science among students. The club is actively working to spark interest in computer science, regardless of individuals' backgrounds and experiences and contribute to the overall advancement of the field
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Are only CS students a part of this club? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    No, anyone from any department can be a part of this club.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">What do we do? <i
+                    class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    We meticulously curate an array of events, such as CODHER, dedicated to championing enhanced female representation in technology, PRODIGY, aimed at nurturing a fervor for computer science and intellectual thinking among school students. Additionally, we facilitate enlightening webinars and alumni talks to offer nuanced insights and learnings of new technologies and comprehensive career guidance. 
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">What programs/sessions do we conduct? <i
+                    class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                   C.O.D.E is dedicated to supporting pre-final and final year students in preparing for interviews and placements, while HEADFIRST caters specifically to first-year students, offering guidance on understanding the fundamentals of data structures and algorithms crucial for competitive programming. Additionally, the club conducts periodic sessions that delve into emerging technologies. CODEX is a series of competitive programming contests to test the students’ understanding and coding skills. The Bell Labs are another series that provide in-depth sessions on the intricacies of operating systems and related concepts. Similarly, a interactive session known as Masterclass is organized with alumni, exploring insights into pursuing higher studies.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Are there any prerequisites for attending specific ACM-CEG programs or sessions? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                </div>
+                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    If any softwares or platforms are required, we will inform the participants priorly and provide them the necessary details of installation.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">What is our aim? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                </div>
+                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Our mission is to inspire students to embark on a transformative journey of learning and mastering the tools of computer science, cultivating a genuine passion for the discipline. We are dedicated to removing obstacles, offering clear guidance, and empowering students to achieve their goals in the field.
+                  </p>
+                </div>
+              </li>
+              
+               <li>
+                <div data-bs-toggle="collapse" href="#faq7" class="collapsed question">What is the full form of ACM? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                </div>
+                <div id="faq7" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                      The full form of ACM is Association for Computing Machinery.
+                  </p>
+                </div>
+              </li>
+              
+               <li>
+                <div data-bs-toggle="collapse" href="#faq8" class="collapsed question">Is there a membership fee to join ACM-CEG? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                </div>
+                <div id="faq8" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                      No, there is no membership fee to join ACM-CEG.
+                  </p>
+                </div>
+              </li>
+              
+               <li>
+                <div data-bs-toggle="collapse" href="#faq9" class="collapsed question">How to become a part of ACM-CEG? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                </div>
+                <div id="faq9" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                      An open call would be conducted every year (during even semesters). Those who attend it can become a part of ACM-CEG.
+                      Wish to step towards the final era of the game, here is the final <a href = "https://rebrand.ly/hbq0k4f" style="color:black" onMouseOver="this.style.cursor='auto'">ticket</a> which leads you to the finale. All the best !!!
+                  </p>
+                </div>
+              </li>
+              
+               <li>
+                <div data-bs-toggle="collapse" href="#faq10" class="collapsed question">How can one access the information posted, particularly regarding opportunities? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                </div>
+                <div id="faq10" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                      Utilizing our Newsletter as a communication channel, we disseminate pertinent and valuable information within the network. Simply subscribe to our Newsletter section with your email, and receive timely updates on events and opportunities. Explore "Offcamp," our program dedicated to sharing off-campus opportunities, including scholarships, internships, job openings, and more, accessible through Instagram, and LinkedIn.
+                  </p>
+                </div>
+              </li>
+              
+               <li>
+                <div data-bs-toggle="collapse" href="#faq11" class="collapsed question">When was this club started in CEG? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                </div>
+                <div id="faq11" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                      Established in 2004, the ACM-CEG Student Chapter is committed to fostering a steadfast passion for computer science among students. The club offers numerous networking opportunities and facilitates access to invaluable advice from leading experts in the field.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End  F.A.Q Section -->
+
+    <!-- =======  testimonial Section ======= -->
+    <!--<section id="testimonial">-->
+    <!--  <div class="container">-->
+    <!--    <div class="section-header">-->
+    <!--      <h2>EXPLORE THE STUDENTS EXPERIENCE</h2>-->
+    <!--    </div>-->
+    <!--    <div class="row">-->
+
+    <!--      <div class="col-lg-3">-->
+    <!--        <div class="card">-->
+    <!--          <div class="face front-face">-->
+    <!--            <div class="pt-3 text-uppercase name"> Abirami Mahesh Vijay </div>-->
+    <!--            <div class="designation">MasterClass session - 2</div>-->
+    <!--          </div>-->
+    <!--          <div class="face back-face"> <span class="fas fa-quote-left"></span>-->
+    <!--            <div class="testimonial">“It was the most informative session I've attended.-->
+    <!--              It provided very good insight and touched upon everything I was looking to gain from this session.-->
+    <!--              Thank you so much for taking time. I gained some very very valuable information.”</div> <span-->
+    <!--              class="fas fa-quote-right"></span>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--      <div class="col-lg-3">-->
+    <!--        <div class="card">-->
+    <!--          <div class="face front-face">-->
+    <!--            <div class="pt-3 text-uppercase name">Muthu Palaniyappan OL</div>-->
+    <!--            <div class="designation"> MasterClass session - 2 </div>-->
+    <!--          </div>-->
+    <!--          <div class="face back-face"> <span class="fas fa-quote-left"></span>-->
+    <!--            <div class="testimonial">“-->
+    <!--              Awesome, It gave different perspective, this gave me a huge insights on research and stuffs. Thanks a-->
+    <!--              lot for doing this talk. ”</div> <span class="fas fa-quote-right"></span>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--      <div class="col-lg-3">-->
+    <!--        <div class="card">-->
+    <!--          <div class="face front-face">-->
+    <!--            <div class="pt-3 text-uppercase name"> Ishwarya Sriram </div>-->
+    <!--            <div class="designation">CODHER'21</div>-->
+    <!--          </div>-->
+    <!--          <div class="face back-face"> <span class="fas fa-quote-left"></span>-->
+    <!--            <div class="testimonial">“The thing I liked most about the hackathon was how good the environment was.-->
+    <!--              As a beginner, it's very easy to feel overwhelmed and surprisingly that did not happen here.-->
+    <!--              Further, the mentors' assistance was really invaluable and I loved how they took the time to help us-->
+    <!--              out.”</div> <span class="fas fa-quote-right"></span>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--      <div class="col-lg-3">-->
+    <!--        <div class="card">-->
+    <!--          <div class="face front-face">-->
+    <!--            <div class="pt-3 text-uppercase name"> Paargav Shanker </div>-->
+    <!--            <div class="designation">CODE'21</div>-->
+    <!--          </div>-->
+    <!--          <div class="face back-face"> <span class="fas fa-quote-left"></span>-->
+    <!--            <div class="testimonial">“The program was very comprehensive and very well organised. The materials-->
+    <!--              given throughout the program and the topic-wise contests gave me much of the practice and confidence I-->
+    <!--              required, which helped me clear my Wells Fargo interview process. Thank you ACM for this program!”-->
+    <!--            </div> <span class="fas fa-quote-right"></span>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+          <!-- <div class="col-lg-3">
+                  <div class="card">
+                      <div class="face front-face">
+                          <div class="pt-3 text-uppercase name"> Usha Varshini Saravanan </div>
+                          <div class="designation">CODHER'21</div>
+                      </div>
+                      <div class="face back-face"> <span class="fas fa-quote-left"></span>
+                          <div class="testimonial">“
+The mentors, admins and the organizers were active. 
+The mentors suggestions and support helped a lot in developing the application.”</div> <span class="fas fa-quote-right"></span>
+                      </div>
+                  </div>
+              </div> -->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--</section>-->
+    <!-- End  F.A.Q Section -->
+
+
+    <!-- ======= Subscribe Section ======= -->
+    <!--<section id="subscribe">-->
+    <!--  <div class="container" data-aos="zoom-in">-->
+    <!--    <div class="section-header">-->
+    <!--      <h2>Newsletter</h2>-->
+    <!--      <p>Receive our event updates</p>-->
+    <!--    </div>-->
+
+    <!--    <form id="newsLetterForm">-->
+    <!--      <div class="row justify-content-center">-->
+    <!--        <div class="col-lg-6 col-md-10 d-flex">-->
+    <!--          <input type="email" name="email" class="form-control" placeholder="Enter your Email">-->
+    <!--          <button type="submit" class="ms-2">Subscribe</button>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </form>-->
+
+    <!--    <div class="my-3 justify-content-center">-->
+          <!-- <div class="error-message" id="error-message">Some error has occurred</div> -->
+    <!--      <div class="sent-message" id="sent-message">Thank you for subscribing</div>-->
+    <!--    </div>-->
+
+    <!--  </div>-->
+    <!--</section>-->
+    <!-- End Subscribe Section -->
+  </main><!-- End #main -->
+
+  <div id="footer-placeholder">
+
+  </div>
+  <!--   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/vanilla-tilt.min.js"></script>
+
+  <!-- stats.js lib -->
+  <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+    $(function () {
+      $("#footer-placeholder").load("footer.html");
+    });
+  </script>
+  <script>
+    $('#newsLetterForm').submit(function (event) {
+      event.preventDefault();
+      console.log('form submitted');
+      $.ajax({
+        url: 'newsletter_action.php',
+        type: 'post',
+        data: $('#newsLetterForm').serialize(),
+        success: function (result) {
+          $("#sent-message").css("display", "block");
+          // console.log(result);
+        }
+        // error: function (result) {
+        //   $("#error-message").css("display", "block");
+        //   //console.log(result);
+        // }
+      });
+    });
+  </script>
+</body>
+
+</html>

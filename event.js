@@ -34,7 +34,7 @@ function plusSlides(tagClasses, move) {
     if(move === 1 && slideNum === 0) slideNum = 1;
     else if(move === -1 && slideNum  == 0) slideNum = 4;
     
-    imgTag.src = "assets/event"+eventNum+"/img"+slideNum+".jpeg";
+    imgTag.src = "assets/events/event"+eventNum+"/img"+slideNum+".jpeg";
     imgTag.id = "image-event="+slideNum;
     imgTag.name = "image-event="+slideNum;
     
