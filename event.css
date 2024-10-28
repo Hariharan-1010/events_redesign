@@ -143,6 +143,11 @@ body {
 .location:hover {
     transform: scale(1.5);
 }
+.polaroid {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
 #card-container {
   display: none;
   height: 300px;
@@ -412,7 +417,7 @@ top: 350px;
 left: calc(53.9% * 2);
 }
 #location-eight {
-top: 50px;
+top: 100px;
 left: calc(61.6% * 2);
 }
 #location-nine {
@@ -460,7 +465,7 @@ top: 350px;
 left: calc(53.9% * 2 - 80px);
 }
 #hoverCard-eight {
-top: 50px;
+top: 100px;
 left: calc(61.6% * 2 - 80px);
 }
 #hoverCard-nine {
