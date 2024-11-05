@@ -31,12 +31,14 @@ function plusSlides(tagClasses, move) {
     const ImgNum = imgTag.id;
     let slideNum = ImgNum.match(/=(\d+)/)[1];
 
-    if(move == 1) slideNum = (parseInt(slideNum)+1)%5;
-    else slideNum = (slideNum-1)%5;
-    if(move === 1 && slideNum === 0) slideNum = 1;
-    else if(move === -1 && slideNum  == 0) slideNum = 4;
+    // if(move == 1) slideNum = (parseInt(slideNum)+1)%2;
+    // else slideNum = (slideNum-1)%2;
+    // if(move === 1 && slideNum === 0) slideNum = 1;
+    // else if(move === -1 && slideNum  == 0) slideNum = 1;
+
+    slideNum = 1
     
-    imgTag.src = "assets/events/event"+eventNum+"/img"+slideNum+".jpeg";
+    imgTag.src = "assets/events/event"+eventNum+"/img"+slideNum+".jpg";
     imgTag.id = "image-event="+slideNum;
     imgTag.name = "image-event="+slideNum;
     

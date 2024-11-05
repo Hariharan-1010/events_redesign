@@ -52,7 +52,8 @@ body {
   visibility: hidden;
   opacity: 0;
   margin: auto 10px;
-  transition: opacity 0.5s ease-in-out;;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 7px;
 }
 .card-txt { 
   text-align: center; 
@@ -193,7 +194,7 @@ body {
   #event-list-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(15, 70vh);
+    grid-template-rows: repeat(12, 70vh);
     margin-right: 10px;
   }
   .event-list-timeline {
@@ -232,7 +233,7 @@ body {
   grid-area: 1 / 2 / 16 / 16;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(15, 70vh);
+  grid-template-rows: repeat(12, 70vh);
 }
 .event-card {
   border: 2px solid black;
@@ -585,11 +586,11 @@ left: calc(92.5% * 2 - 80px);
     #event-list-container {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(15, 100vh);
+      grid-template-rows: repeat(12, 100vh);
       margin-right: 10px;
     }
     .event-card-container {
-      grid-template-rows: repeat(15, 100vh);
+      grid-template-rows: repeat(12, 100vh);
     }
     .event-title {
       grid-area: 1 / 1 / 2 / 13;
@@ -776,11 +777,11 @@ left: calc(92.5% * 2 - 80px);
     #event-list-container {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(15, 100vh);
+      grid-template-rows: repeat(12, 100vh);
       margin-right: 10px;
     }
     .event-card-container {
-      grid-template-rows: repeat(15, 100vh);
+      grid-template-rows: repeat(12, 100vh);
     }
     .event-title {
       grid-area: 1 / 1 / 2 / 13;
@@ -966,11 +967,11 @@ left: calc(92.5% * 2 - 80px);
     #event-list-container {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(15, 60vh);
+      grid-template-rows: repeat(12, 60vh);
       margin-right: 10px;
     }
     .event-card-container {
-      grid-template-rows: repeat(15, 60vh);
+      grid-template-rows: repeat(12, 60vh);
     }
     .event-title {
       grid-area: 1 / 1 / 2 / 13;
@@ -1157,11 +1158,11 @@ left: calc(92.5% * 2 - 80px);
     #event-list-container {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(15, 70vh);
+      grid-template-rows: repeat(12, 70vh);
       margin-right: 10px;
     }
     .event-card-container {
-      grid-template-rows: repeat(15, 70vh);
+      grid-template-rows: repeat(12, 70vh);
     }
     .event-title {
       grid-area: 1 / 1 / 2 / 13;
@@ -1269,7 +1270,7 @@ left: calc(92.5% * 2 - 80px);
   #event-list-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(15, 70vh);
+    grid-template-rows: repeat(12, 70vh);
     margin-right: 10px;
   }
   .event-card-container {
